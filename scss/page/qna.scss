@@ -1,0 +1,122 @@
+@import "../style.scss";
+
+main section:nth-child(3){
+    padding: 100px 64px 72px;
+}
+#qna-search{
+    margin-top: 64px;
+}
+.notice{
+    &-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+.list{
+    &-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        &.type2{
+            gap: 0;
+        }
+    }
+    &-head{
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        background: $lightBlue;
+        cursor: pointer;
+        &.type2 {
+                background: $white;
+                padding: 28px 40px;
+                border-bottom: 1px solid $lightGrey;
+                &.open{
+                    border-bottom: none;
+                }
+            }
+        &.open{
+            .list-btn{
+                transform: rotate(180deg);
+            }
+        }   
+    }
+    &-body{
+        background: $lightBlue;
+        padding: 48px 40px;
+        display: none;
+    }
+    &-main{
+        display: flex;
+        gap: 40px;
+    }
+    &-cate{
+        color: $blue;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    &-tit{
+        color: $darkBlue;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        flex: 1;
+    }
+    &-q{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 120%;
+        color: $blue;
+    }
+    &-a{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        color: $blueGrey;
+    }
+    &-btn{
+        color:$blueGrey;
+        font-size: 32px;
+    }
+    &-contents{
+        padding-left: 68px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 180%;
+        color: $blueGrey;
+        word-break: keep-all;
+        &.type2{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding-left: 0;
+        }
+    }
+    &-box{
+        background: $white;
+        padding: 24px 30px;
+        border-radius: 4px;
+        margin-top: 40px;
+        &.type2{
+            background: none;
+            padding: 0;
+            border-radius: none;
+            margin-top: 24px;
+            ul{
+                margin-inline-start: 32px;
+            }
+            li{
+                list-style: disc;
+            }
+        }
+    }
+}
+#qna{
+    padding: 72px 104px;
+}

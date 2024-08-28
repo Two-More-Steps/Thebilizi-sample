@@ -1,0 +1,142 @@
+@import "../style.scss";
+
+.photo {
+  &-item {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background: $lightBlue;
+    border-radius: 4px;
+    &:hover {
+      background: $blue;
+      .photo {
+        &-tit,
+        &-text {
+          color: $white;
+        }
+        &-btn {
+          color: $blue;
+          background: $white;
+        }
+        &-footer-line {
+          background: $blueGrey;
+        }
+      }
+    }
+    .flex {
+      gap: 16px;
+    }
+  }
+  &-img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 5px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-contents {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-tit {
+    font-size: 32px;
+    color: $darkBlue;
+    line-height: 120%;
+    font-weight: 700;
+  }
+  &-head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &-btn {
+    width: fit-content;
+  }
+  &-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    &-line {
+      width: 100%;
+      height: 1px;
+      background: $blueGrey;
+    }
+  }
+  &-text {
+    color: $blueGrey;
+    font-size: 16px;
+  }
+}
+#photo-detail {
+  &-header {
+    padding: 100px 64px;
+    background: $lightBlue;
+    border-bottom: 1px solid $lightGrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    .photo {
+      &-text {
+        font-size: 20px;
+      }
+
+      &-footer {
+        &-line {
+          width: 100%;
+          height: 1px;
+          background: $blueGrey;
+        }
+
+        .flex {
+          gap: 16px;
+        }
+      }
+    }
+    .detail-tit {
+      color: $darkBlue;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 100%;
+    }
+  }
+  &-body {
+    padding: 96px 0;
+  }
+  &-footer {
+    padding: 56px 0;
+    border-top: 1px solid $lightGrey;
+  }
+}
+.photo-detail {
+  &-wrap {
+    max-width: 1065px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  &-text {
+    margin-top: 46px;
+    color: $blueGrey;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    text-align: center;
+  }
+  &-list {
+    max-width: 1065px;
+    margin: 0 auto;
+  }
+}
